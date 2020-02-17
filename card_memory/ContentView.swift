@@ -10,10 +10,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    private var card = ["back", "C"]
-    @State private var numbers = [0, 1]
-    @State private var num1 = 2
-    @State private var num2 = 5
     @State private var lives = 3
     @State private var height = 1
     @State private var width = 4
@@ -54,63 +50,39 @@ struct ContentView: View {
                 Spacer()
                 //test if cards are flipped
                 if flipped {
+                    CardBuilder()
                     
-                    VStack{
-                        Spacer()
-                        
-                        HStack{
-                            
-                            Image(String(num1) + String(card[numbers[1]])).resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-                            Image(String(num2) + String(card[numbers[1]])).resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-                            Image(String(num1) + String(card[numbers[1]])).resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-                            Image(String(num2) + String(card[numbers[1]])).resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-                            
-                        }
+                    Spacer()
                     
-                        Spacer()
+                    Button(action: {
+                        self.flipped.toggle()
                         
-                        Button(action: {
-                            self.flipped.toggle()
-                            
-                            
-                        }) {
-                            Text("Flip Cards")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.red)
-                                .buttonStyle(/*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Button Style@*/DefaultButtonStyle()/*@END_MENU_TOKEN@*/)
-                                
-                        }
+                    }) {
+                        Text("Flip Cards")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.red)
+                            .buttonStyle(/*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Button Style@*/DefaultButtonStyle()/*@END_MENU_TOKEN@*/)
                         
                     }
-                    
-                
                 }
+                    
                 else {
-                    HStack{
-                        
-                        Image(card[numbers[0]]).resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-                        Image(card[numbers[0]]).resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-                        Image(card[numbers[0]]).resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-                        Image(card[numbers[0]]).resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-                    }
+                    
+                    CardBack()
+                    
                     Spacer()
                 }
-                
-                
             }
         }
         
-        
     }
     
-    
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+    
 }
-
 

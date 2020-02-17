@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C5424B823FAF9CB0040B86A /* CardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5424B723FAF9CB0040B86A /* CardBuilder.swift */; };
+		7C5424BA23FB05C50040B86A /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5424B923FB05C50040B86A /* CardBack.swift */; };
 		7CD067DC23F78B28005A7041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD067DB23F78B28005A7041 /* AppDelegate.swift */; };
 		7CD067DE23F78B28005A7041 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD067DD23F78B28005A7041 /* SceneDelegate.swift */; };
 		7CD067E023F78B28005A7041 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD067DF23F78B28005A7041 /* ContentView.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C5424B723FAF9CB0040B86A /* CardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBuilder.swift; sourceTree = "<group>"; };
+		7C5424B923FB05C50040B86A /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
 		7CD067D823F78B28005A7041 /* card_memory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = card_memory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD067DB23F78B28005A7041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CD067DD23F78B28005A7041 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				7CD067DD23F78B28005A7041 /* SceneDelegate.swift */,
 				7CD067DF23F78B28005A7041 /* ContentView.swift */,
 				7CD067E123F78B2D005A7041 /* Assets.xcassets */,
+				7C5424B723FAF9CB0040B86A /* CardBuilder.swift */,
+				7C5424B923FB05C50040B86A /* CardBack.swift */,
 				7CD067E623F78B2D005A7041 /* LaunchScreen.storyboard */,
 				7CD067E923F78B2D005A7041 /* Info.plist */,
 				7CD067E323F78B2D005A7041 /* Preview Content */,
@@ -268,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD067DC23F78B28005A7041 /* AppDelegate.swift in Sources */,
+				7C5424B823FAF9CB0040B86A /* CardBuilder.swift in Sources */,
 				7CD067DE23F78B28005A7041 /* SceneDelegate.swift in Sources */,
+				7C5424BA23FB05C50040B86A /* CardBack.swift in Sources */,
 				7CD067E023F78B28005A7041 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
