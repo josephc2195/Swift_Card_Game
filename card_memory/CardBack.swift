@@ -17,32 +17,10 @@ struct CardBack: View {
     @State private var choice = 0
     
     var body: some View {
-        HStack{
-            Button(action: {
-                self.choice = 2
-            }) {
-                Image("back").resizable().frame(maxWidth: 50, maxHeight: 75)
-            }
-            Button(action: {
-                self.choice = 2
-            }) {
-                Image("back").resizable().frame(maxWidth: 50, maxHeight: 75)
-            }
-
-            Button(action: {
-                self.choice = 2
-            }) {
-                Image("back").resizable().frame(maxWidth: 50, maxHeight: 75)
-            }
-
-            Button(action: {
-                self.choice = 2
-            }) {
-                Image("back").resizable().frame(maxWidth: 50, maxHeight: 75)
-            }
+        Text("hi")
         }
-    }
 }
+
 
 struct CardBack_Previews: PreviewProvider {
     static var previews: some View {

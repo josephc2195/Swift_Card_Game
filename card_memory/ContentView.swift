@@ -10,10 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+    private var card = ["back", "C"]
+    @State private var choice = 0
+    @State private var numbers = [0, 1]
+    @State private var num1 = 2
+    @State private var num2 = 5
     @State private var lives = 3
     @State private var height = 1
     @State private var width = 4
-    @State private var flipped = true
+    @State private var all_flipped = true
+    @State private var choc = [0]
+    
     var body: some View {
         
         ZStack{
@@ -49,13 +56,13 @@ struct ContentView: View {
                 
                 Spacer()
                 //test if cards are flipped
-                if flipped {
+                if all_flipped {
                     CardBuilder()
                     
                     Spacer()
                     
                     Button(action: {
-                        self.flipped.toggle()
+                        self.all_flipped.toggle()
                         
                     }) {
                         Text("Flip Cards")
@@ -69,10 +76,42 @@ struct ContentView: View {
                     
                 else {
                     
-                    CardBack()
+                    HStack{
+                    Button(action: {
+                        self.choc.append(2)
+                        
+                    }) {
+                        Image("back").resizable().frame(maxWidth: 50, maxHeight: 75)
+                    }
+                    Button(action: {
+                        self.choc.append(3)
+                    }) {
+                        Image("back").resizable().frame(maxWidth: 50, maxHeight: 75)
+                    }
+
+                    Button(action: {
+                        self.choc.append(2)
+                    }) {
+                        Image("back").resizable().frame(maxWidth: 50, maxHeight: 75)
+                    }
+
+                    Button(action: {
+                        self.choc.append(3)
+                    }) {
+                        Image("back").resizable().frame(maxWidth: 50, maxHeight: 75)
+                    }
+                    
+                    }
                     
                     Spacer()
+                    
+                    
+                    
+                
+                    
                 }
+                
+                
             }
         }
         

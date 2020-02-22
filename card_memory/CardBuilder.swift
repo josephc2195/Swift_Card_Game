@@ -18,10 +18,10 @@ struct CardBuilder: View {
     var body: some View {
         HStack {
             
-            Image(String(num1) + "C").resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-            Image(String(num2) + "C").resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-            Image(String(num2) + "C").resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
-            Image(String(num1) + "C").resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
+            Image("2C").resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
+            Image("3C").resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
+            Image("2C").resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
+            Image("3C").resizable().frame(maxWidth: 50, maxHeight: 75).aspectRatio(contentMode: .fill)
         }
     }
 }
