@@ -79,7 +79,9 @@ struct ContentView: View {
                     HStack{
                     Button(action: {
                         self.choc.append(2)
-                        
+                        ZStack {
+                            FirstFlipped()
+                        }
                     }) {
                         Image("back").resizable().frame(maxWidth: 50, maxHeight: 75)
                     }
@@ -105,12 +107,7 @@ struct ContentView: View {
                     
                     Spacer()
                     
-                    
-                    
-                
-                    
                 }
-                
                 
             }
         }

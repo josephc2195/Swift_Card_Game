@@ -17,7 +17,7 @@ struct CardBack: View {
     @State private var choice = 0
     
     var body: some View {
-        Text("hi")
+        Text("0")
         }
 }
 

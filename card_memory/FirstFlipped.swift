@@ -31,7 +31,6 @@ struct FirstFlipped: View {
                 Image("back").resizable().frame(maxWidth: 50, maxHeight: 75)
             }
 
-
             
         }
     }
